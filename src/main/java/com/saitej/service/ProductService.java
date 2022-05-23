@@ -16,4 +16,8 @@ public interface ProductService {
     public Product getProduct(Long id);
 
 
+    public Product updateProduct(Product product);
+
+
+
 }

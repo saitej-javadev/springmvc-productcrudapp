@@ -38,7 +38,8 @@
                   <td>${product.description}</td>
                   <td class="font-weight-bold"> &#8377; ${product.price}</td>
                   <td>
-                    <a href="delete-product/${product.id}"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="delete-product/${product.id}"><i class="fa-solid fa-trash-can"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="update-form/${product.id}"><i class="fa-solid fa-wrench"></i></a>
                   </td>
               </tr>
               </c:forEach>

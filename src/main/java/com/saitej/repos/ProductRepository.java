@@ -17,7 +17,7 @@ public class ProductRepository {
 
     @Transactional
     public Product saveProduct(Product product){
-        hibernateTemplate.save(product);
+         hibernateTemplate.save(product);
         return product;
     }
 
@@ -38,5 +38,9 @@ public class ProductRepository {
         return this.hibernateTemplate.get(Product.class,id);
     }
 
-
+    @Transactional
+    public Product updateProduct(Product product) {
+         this.hibernateTemplate.saveOrUpdate(product);
+          return product;
+    }
 }

@@ -1,9 +1,9 @@
 package com.saitej.service;
 
 import com.saitej.model.Product;
+import com.saitej.repos.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.saitej.repos.ProductRepository;
 
 import java.util.List;
 
@@ -32,5 +32,11 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product getProduct(Long id) {
         return productRepository.getProduct(id);
+    }
+
+    @Override
+    public Product updateProduct(Product product) {
+
+        return productRepository.updateProduct(product);
     }
 }
