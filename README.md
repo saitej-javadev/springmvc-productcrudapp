@@ -24,4 +24,4 @@ add  <code> &lt;%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %&g
 _**Note :**_  <code>org.springframework.dao.InvalidDataAccessApiUsageException: Write operations are not allowed in read-only mode (FlushMode.MANUAL): Turn your Session into FlushMode.COMMIT/AUTO or remove 'readOnly' marker from transaction definition. </code>
 for above error use **@Transactional** on save or update methods.
 
-${pageContext.request.contextPath} to get the project url name path
+**${pageContext.request.contextPath}** to get the project url name path
